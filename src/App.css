@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  text-align: center;
+}
+
+.color_pikcer_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color_pikcer_bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 500px;
+  height: 500px;
+  background-color: transparent;
+  border: none;
+}
+
+/* google chrome */
+.color_pikcer_bar::-webkit-color-swatch {
+  border: 4px solid black;
+  border-radius: 100px !important;
+}
+
+/* firefox */
+.color_pikcer_bar::-moz-color-swatch {
+  border: 4px solid black;
+  border-radius: 15px !important;
+}
